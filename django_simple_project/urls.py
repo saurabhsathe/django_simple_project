@@ -18,5 +18,8 @@ from django.urls import path
 from demo import views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('hello/',views.home,name="demo_app")
+    path('hello/',views.home,name="demo_app"),
+    
+    path('form/',views.get_name,name="demo_form")
+    
 ]
